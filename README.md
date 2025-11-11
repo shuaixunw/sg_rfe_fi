@@ -24,11 +24,7 @@ The approach is particularly developed for **Traumatic Brain Injury (TBI)** prog
 IA-RFE iteratively eliminates features based on a **dual-criterion strategy**:
 
 1. **Interaction-Aware Scoring:**  
-   Using the SHAP interaction tensor from GPU-accelerated XGBoost, we compute a *network importance* score for each feature:  
-   \[
-   NI_i = \text{main}_i + \alpha \sum_{j \ne i} |\text{inter}_{ij}|
-   \]
-   where \(\alpha\) is adaptively determined from the median interaction strength ratio.
+   Using the SHAP interaction tensor from GPU-accelerated XGBoost, we compute a *network importance* score for each feature.
 
 2. **Statistical Safeguard (DeLong Test):**  
    Before removing a feature, the model compares AUC distributions before and after deletion using the **DeLong test**.  
@@ -40,7 +36,7 @@ This design achieves **statistically safe pruning** while maintaining high progn
 
 ## ⚙️ Key Features
 
-- ✅ GPU-accelerated SHAP interaction computation (via **GPUTreeShap**).  
+- ✅ GPU-accelerated SHAP interaction computation.  
 - ✅ Adaptive α to balance main and interactive effects.  
 - ✅ Cross-validated DeLong test for statistical guidance.  
 - ✅ Bootstrapped AUC confidence intervals.  
