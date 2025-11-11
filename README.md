@@ -46,7 +46,4 @@ This design achieves **statistically safe pruning** while maintaining high progn
 - ✅ Bootstrapped AUC confidence intervals.  
 - ✅ Fully reproducible pipeline with modular helper functions.
 
----
-
-## 📁 Repository Structure
 
