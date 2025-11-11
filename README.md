@@ -1,15 +1,12 @@
 # Statistically Guided and Interaction-Aware Recursive Feature Elimination (IA-RFE)
 
 **Authors:** Shuaixun Wang, Mingkai Liu  
-**Affiliation:** Imperial College London  
 **Manuscript:** *Statistically Guided and Interaction-Aware Recursive Feature Elimination for Stable Prognostic Modeling in Traumatic Brain Injury*  
-**Status:** Accepted for publication in *IEEE Journal of Biomedical and Health Informatics (JBHI)*  
-
 ---
 
 ## 🔍 Overview
 
-This repository provides the official implementation of **IA-RFE (Interaction-Aware Recursive Feature Elimination)**, a feature-selection framework designed to enhance **stability, interpretability, and statistical rigor** in biomedical prognostic modeling.
+This repository provides the official implementation of **SG-IA-RFE (Statistically Guided and Interaction-Aware Recursive Feature Elimination)**, a feature-selection framework designed to enhance **stability, interpretability, and statistical rigor** in biomedical prognostic modeling.
 
 The method integrates:
 
